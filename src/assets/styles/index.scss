@@ -1,0 +1,56 @@
+@import url("./reset.scss");
+@import url("./variables/global.scss");
+@import url("./themes/dark.scss");
+@import url("./themes/normal.scss");
+
+body {
+  font: var(--font-s);
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--primary-color);
+}
+.app {
+  min-height: 100vh;
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  color: var(--icon-color);
+}
+
+// Loader
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid var(--primary-color);
+  border-color: var(--primary-color) transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Errors
+.error {
+  text-align: center;
+  color: var(--primary-color);
+  font: var(--font-l);
+}

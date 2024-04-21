@@ -1,0 +1,26 @@
+.item {
+  display: flex;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+
+  button {
+    flex-basis: 50%;
+  }
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  p {
+    color: var(--primary-color);
+    font: var(--font-m);
+  }
+}
